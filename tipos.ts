@@ -1,11 +1,12 @@
-// tipos.ts
 export interface UrlEncurtada {
   id: number;
-  codigo: string;       // ex.: "aB3xK9"
-  urlOriginal: string;  // URL completa
+  codigo: string;
+  urlOriginal: string;
   acessos: number;
-  criadoEm: string;     // ISO datetime
+  criadoEm: string;
+  expiraEm?: string | null;
 }
+
 export interface RespostaErro {
   erro: string;
 }
