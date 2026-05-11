@@ -1,0 +1,35 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Encurtador de URLs</title>
+  <style>
+    body { font-family: system-ui; max-width: 600px;
+           margin: 40px auto; padding: 0 20px; }
+    h1 { color: #0d4f3c; }
+    input, button { font-size: 16px; padding: 10px; }
+    input { width: 70%; }
+    button { background: #0d4f3c; color: white;
+             border: none; cursor: pointer; }
+    .resultado { margin-top: 20px; padding: 12px;
+                 background: #eef6f3; border-left: 4px solid #1a8870; }
+    table { width: 100%; border-collapse: collapse; margin-top: 30px; }
+    th, td { padding: 8px; border-bottom: 1px solid #ddd;
+             text-align: left; }
+    th { background: #0d4f3c; color: white; }
+  </style>
+</head>
+<body>
+  <h1> Encurtador de URLs</h1>
+  <input id="url" type="url" placeholder="https://exemplo.com/...">
+  <button id="btn">Encurtar</button>
+  <div id="resultado"></div>
+  <h2>URLs cadastradas</h2>
+  <table id="tabela">
+    <thead><tr><th>Código</th><th>Original</th><th>Acessos</th></tr></thead>
+    <tbody></tbody>
+  </table>
+  <script src="app.js"></script>
+</body>
+</html>
